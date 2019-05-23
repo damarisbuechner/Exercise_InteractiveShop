@@ -50,7 +50,7 @@ height: 100%; */
 .big-productimage{
   width: 32vw;
   height: 32vw;
-
+  opacity: 0;
   position: absolute;
 }
 
@@ -69,4 +69,8 @@ height: 100%; */
   width: 32vw;
   height: 33vw;
   position:relative;
+}
+
+.choosen-productimage{
+  opacity: 1;
 }
