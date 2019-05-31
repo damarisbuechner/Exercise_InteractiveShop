@@ -19,5 +19,13 @@ $miniimages.hover(function(event){
   $(".js-image-"+sujet).addClass("choosen-productimage");
 });
 
+var $warenkorbButton = $(".warenkorb-button");
+console.log("$warenkorbButton", $warenkorbButton);
+
+$warenkorbButton.click(function(){
+  console.log("that click was made")
+  $(".warenkorb-box").removeClass("warenkorb-hidden")
+  
+});
 
 });
