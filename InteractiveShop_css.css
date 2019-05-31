@@ -52,6 +52,8 @@ height: 100%; */
   height: 32vw;
   opacity: 0;
   position: absolute;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
 
 .mini-productimage{
@@ -77,5 +79,23 @@ height: 100%; */
 }
 
 .choosen-mini-productimage{
-  border-left: solid black; 
+  border-left: solid black;
+}
+
+.container-textoverview{
+  display:flex;
+  flex-direction: column;
+  width:60vw;
+  height:32vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  background: rgb(245, 175, 204);
+}
+
+.feature-box{
+  background: rgb(227, 208, 133);
+}
+
+.feature-list{
+  background: rgb(127, 171, 136);
 }
