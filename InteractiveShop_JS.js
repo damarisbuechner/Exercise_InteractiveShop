@@ -1,31 +1,47 @@
-$(document).ready(function(){
- console.log('hallo');
+$(document).ready(function() {
+  console.log('hallo');
 
-var $miniimages = $(".mini-productimage");
-console.log("$miniimages", $miniimages);
+  var $miniimages = $(".mini-productimage");
+  console.log("$miniimages", $miniimages);
 
 
-$miniimages.hover(function(event){
-  var $chlickedImage = $(event.target);
-  console.log("$chlickedImage", $chlickedImage);
+  $miniimages.hover(function(event) {
+    var $chlickedImage = $(event.target);
+    console.log("$chlickedImage", $chlickedImage);
 
-  $(".mini-productimage").removeClass("choosen-mini-productimage");
-  $(this).addClass("choosen-mini-productimage")
+    $(".mini-productimage").removeClass("choosen-mini-productimage");
+    $(this).addClass("choosen-mini-productimage")
 
-  var sujet = $chlickedImage.attr('data-target');
-  console.log(sujet);
+    var sujet = $chlickedImage.attr('data-target');
+    console.log(sujet);
 
-  $(".big-productimage").removeClass("choosen-productimage");
-  $(".js-image-"+sujet).addClass("choosen-productimage");
-});
+    $(".big-productimage").removeClass("choosen-productimage");
+    $(".js-image-" + sujet).addClass("choosen-productimage");
+  });
 
-var $warenkorbButton = $(".warenkorb-button");
-console.log("$warenkorbButton", $warenkorbButton);
+  var $shoppingcartButton = $(".shoppingcart-button");
+  console.log("$shoppingcartButton", $shoppingcartButton);
 
-$warenkorbButton.click(function(){
-  console.log("that click was made")
-  $(".warenkorb-box").removeClass("warenkorb-hidden")
-  
-});
+  $shoppingcartButton.click(function() {
+    console.log("that click was made");
+    $(".shoppingcart-box").removeClass("shoppingcart-hidden");
+
+    var $cart = $('.shoppingcart-box');
+    var htmlString = `<p class="cart-item">Mini Actioncamera Go Pro Hero 6</p>`;
+
+
+    $cart.append(htmlString);
+ $shoppingcartButton.attr('disabled', true);
+
+  });
+
+  var $shoppingcartBox = $(".shoppingcart-navigation-box");
+  console.log("$shoppingcartBox", $shoppingcartBox);
+
+  $shoppingcartBox.click(function() {
+    console.log("shoppingcart in navigation was clicked");
+    $(".shoppingcart-box").toggleClass("shoppingcart-hidden");
+  });
+
 
 });
