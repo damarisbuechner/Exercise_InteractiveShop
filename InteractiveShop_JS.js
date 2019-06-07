@@ -27,11 +27,11 @@ $(document).ready(function() {
     $(".shoppingcart-box").removeClass("shoppingcart-hidden");
 
     var $cart = $('.shoppingcart-box');
-    var htmlString = `<p class="cart-item">Mini Actioncamera Go Pro Hero 6</p>`;
+    var htmlString = `<dl class="cart-item">Mini Actioncamera Go Pro Hero 6</dl>`;
 
 
     $cart.append(htmlString);
- $shoppingcartButton.attr('disabled', true);
+    $shoppingcartButton.attr('disabled', true);
 
   });
 
