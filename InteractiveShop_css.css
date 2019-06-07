@@ -5,11 +5,12 @@
 }
 
 body {
-  background: rgb(193, 183, 167);
+  background: rgb(218, 218, 218);
 }
 
 h1 {
   font-size: 4vmax;
+  margin-left: 1vw;
 }
 
 h2 {
@@ -42,7 +43,7 @@ dl, p {
   overflow-y: scroll;
   box-shadow: 0px 0px 100px grey;
   transition: all 1s ease-out;
-  background: rgb(113, 214, 245);
+  background: rgb(255, 255, 255);
 }
 
 .shoppingcart-hidden {
@@ -62,6 +63,7 @@ dl, p {
   /* background: rgb(142, 184, 255); */
   display: flex;
   width: 40vw;
+  margin-left: 2vw;
   /* height:60vh; */
 }
 
@@ -85,6 +87,7 @@ height: 100%; */
 .big-productimage {
   width: 32vw;
   height: 32vw;
+  border-radius: 5vw;
   opacity: 0;
   position: absolute;
   transition-property: opacity;
@@ -128,8 +131,10 @@ height: 100%; */
 }
 
 .feature-box {
-  background: rgb(227, 208, 133);
+  background: linear-gradient(to bottom right, rgb(29, 37, 41), rgb(95, 183, 212));
   margin: 1vw;
+  max-width: 20vw;
+  border-radius: 0.5vw;
 }
 
 .feature-list {
@@ -138,12 +143,12 @@ height: 100%; */
 
 .shoppingcart-button {
   font-size: 1.5vmax;
-  width: 18vw;
-  height: 4vw;
+  width: 13vw;
+  height: 2vw;
   border: none;
-  background: rgb(158, 69, 227);
-  margin: 2vw;
-  margin-left: 1vw;
+  background: rgb(66, 66, 66);
+  margin: 1vw;
+  border-radius: 5vw;
   /* transition-property: transform;
   transition-property: background-color;
     transition-duration: 1s, 1s; */
