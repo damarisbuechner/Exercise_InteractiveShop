@@ -32,6 +32,7 @@ $(document).ready(function() {
 
     $cart.append(htmlString);
     $shoppingcartButton.attr('disabled', true);
+    $("shoppingcart-button").removeClass("shoppingcart-button:hover")
 
   });
 

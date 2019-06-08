@@ -121,7 +121,7 @@ height: 100%; */
 }
 
 .choosen-mini-productimage {
-  border-left: solid black;
+  border-left: solid rgb(95, 183, 212);
 }
 
 .container-textoverview {
@@ -163,4 +163,10 @@ height: 100%; */
 .shoppingcart-button:hover {
   transform: scale(1.02);
   background: linear-gradient(to bottom right, rgb(95, 183, 212),rgb(0, 55, 83));
+}
+
+.shoppingcart-button:disabled{
+  background: rgb(57, 57, 57);
+  color: rgb(102, 102, 102);
+  pointer-events:none;
 }
